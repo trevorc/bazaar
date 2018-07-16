@@ -1,0 +1,6 @@
+{
+  "API_HOST": "http://dev.bazaar.bbsvc.net/api",
+  "SECRET_KEY": "",
+  "STRIPE_SECRET_KEY": "sk_test_",
+  "WWW_HOST": "http://dev.bazaar.bbsvc.net"
+}

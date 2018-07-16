@@ -1,0 +1,5 @@
+{
+  "SECRET_KEY": "",
+  "STRIPE_SECRET_KEY": "",
+  "WWW_HOST": "https://api.bazaar.bbsvc.net"
+}

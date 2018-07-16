@@ -1,0 +1,22 @@
+#+TITLE: Bazaar API Readme
+#+AUTHOR: Trevor Caira
+
+* Components
+
+The Bazaar backend is broken out into the following components:
+
+- The backend API proper :: this implements the application-layer
+     business logic of the platform. The API lives in the ~api~
+     directory.
+- The SQL database :: all application concerns are persisted here, and
+     persistence-level business logic is implemented as stored
+     procedures and triggers in PostgreSQL. The SQL lives in the ~db~
+     directory.
+- The website component :: the server-side components which host the
+     frontend website is here. The website is implemented as a
+     single-page website, so these are minimal. The website lives in
+     the ~web~ directory.
+- The ingest pipeline :: this constitues the component which updates
+     the database from Seatgeek on a regular basis. This is written as
+     a shell pipeline which is as idempotent as possible. These
+     scripts live in ~ingest~.
